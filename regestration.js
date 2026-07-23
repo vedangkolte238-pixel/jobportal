@@ -61,5 +61,5 @@ form.addEventListener("submit", function(e){
     message.textContent = "Registration Successful!";
 
     form.reset();
-
+    alert("Registration Successful!");
 });
