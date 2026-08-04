@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#020617,#0f172a,#1e1b4b);
+    color:white;
+    min-height:100vh;
+}
+
+
+
+
+header{
+    background:#020617;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 0 20px #2563eb;
+}
+
+header h1{
+    color:#38bdf8;
+    font-size:30px;
+}
+
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+
+
+.jobs{
+    padding:40px;
+    text-align:center;
+}
+
+
+.jobs h2{
+    font-size:35px;
+    color:#7dd3fc;
+    margin-bottom:30px;
+}
+
+
+
+
+.job-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+
+.job-card{
+
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    text-align:left;
+
+    box-shadow:
+    0 0 15px rgba(56,189,248,0.4);
+
+    transition:0.3s;
+}
+
+
+.job-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 0 25px #38bdf8;
+
+}
+
+
+.job-card h3{
+
+    color:#38bdf8;
+    font-size:24px;
+    margin-bottom:15px;
+
+}
+
+
+.job-card p{
+
+    margin:10px 0;
+    color:#e5e7eb;
+
+}
+
+
+button{
+
+    margin-top:15px;
+    width:100%;
+    padding:12px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#2563eb;
+    color:white;
+
+    font-size:16px;
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background:#38bdf8;
+    color:black;
+
+}

@@ -1,0 +1,283 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#020617;
+    color:#fff;
+}
+
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#08142c;
+    box-shadow:0 0 20px rgba(0,140,255,.25);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo i{
+    color:#3B82F6;
+    font-size:28px;
+}
+
+.logo h2{
+    color:#3B82F6;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#60A5FA;
+}
+
+.hero{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#3B82F6;
+}
+
+.hero p{
+    color:#cbd5e1;
+    width:70%;
+    margin:auto;
+    line-height:30px;
+}
+
+.search-box{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+}
+
+.search-box input{
+    width:450px;
+    padding:15px;
+    border:none;
+    border-radius:8px 0 0 8px;
+    background:#0f172a;
+    color:white;
+    outline:none;
+}
+
+.search-box button{
+    padding:15px 30px;
+    border:none;
+    cursor:pointer;
+    background:#2563EB;
+    color:white;
+    border-radius:0 8px 8px 0;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#3B82F6;
+    box-shadow:0 0 20px #3B82F6;
+}
+
+.stats{
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#08142c;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+    border:1px solid rgba(59,130,246,.25);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(59,130,246,.6);
+}
+
+.card i{
+    font-size:45px;
+    color:#3B82F6;
+    margin-bottom:15px;
+}
+
+.card h2{
+    margin-bottom:10px;
+}
+
+.jobs{
+    width:90%;
+    margin:80px auto;
+}
+
+.jobs h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#60A5FA;
+}
+
+.job-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.job-card{
+    background:#08142c;
+    padding:30px;
+    border-radius:15px;
+    transition:.3s;
+    border:1px solid rgba(59,130,246,.2);
+}
+
+.job-card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 25px rgba(59,130,246,.5);
+}
+
+.job-card h3{
+    color:#60A5FA;
+    margin-bottom:15px;
+}
+
+.job-card p{
+    margin:10px 0;
+    color:#cbd5e1;
+}
+
+.job-card button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#2563EB;
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.job-card button:hover{
+    background:#3B82F6;
+    box-shadow:0 0 20px #3B82F6;
+}
+
+.categories{
+    width:90%;
+    margin:80px auto;
+}
+
+.categories h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#60A5FA;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.category{
+    background:#08142c;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.category:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(59,130,246,.5);
+}
+
+.category i{
+    font-size:45px;
+    color:#3B82F6;
+    margin-bottom:15px;
+}
+
+.category h3{
+    color:white;
+}
+
+
+footer{
+    margin-top:80px;
+    background:#08142c;
+    text-align:center;
+    padding:25px;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    margin:10px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    width:100%;
+}
+
+.search-box{
+    flex-direction:column;
+}
+
+.search-box input{
+    width:100%;
+    border-radius:8px;
+}
+
+.search-box button{
+    width:100%;
+    margin-top:10px;
+    border-radius:8px;
+}
+
+}
