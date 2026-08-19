@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    color:#1e293b;
+    background:
+        radial-gradient(circle at 12% 18%,rgba(134,239,219,.35),transparent 28%),
+        radial-gradient(circle at 88% 22%,rgba(129,140,248,.28),transparent 30%),
+        radial-gradient(circle at 75% 85%,rgba(165,180,252,.24),transparent 32%),
+        radial-gradient(circle at 25% 80%,rgba(103,232,249,.18),transparent 30%),
+        linear-gradient(135deg,#A8D5CF 0%,#A7CBD8 25%,#B5C8E2 50%,#B8B9D8 75%,#A9B5D0 100%);
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+header{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,.28);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    border-bottom:1px solid rgba(255,255,255,.4);
+    box-shadow:0 8px 30px rgba(30,41,59,.12);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header h1{
+    color:#123B4A;
+    font-size:30px;
+    text-shadow:0 0 15px rgba(21,94,117,.2);
+}
+
+header a{
+    color:#1e293b;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:500;
+    transition:.3s ease;
+}
+
+header a:hover{
+    color:#155E75;
+    text-shadow:0 0 12px rgba(21,94,117,.25);
+}
+
+.company-container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:60px 0;
+}
+
+.company-card{
+    background:rgba(255,255,255,.3);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.45);
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(30,41,59,.12),inset 0 1px 0 rgba(255,255,255,.5);
+    transition:.3s ease;
+}
+
+.company-card:hover{
+    transform:translateY(-8px);
+    border-color:rgba(21,94,117,.28);
+    box-shadow:0 15px 35px rgba(30,41,59,.16),0 0 28px rgba(21,94,117,.15);
+}
+
+.company-card h2{
+    color:#155E75;
+    margin-bottom:15px;
+    font-size:26px;
+    text-shadow:0 0 12px rgba(21,94,117,.15);
+}
+
+.company-card p{
+    color:#334155;
+    margin:10px;
+    font-size:16px;
+    line-height:1.6;
+}
+
+@media(max-width:768px){
+    header{
+        padding:20px;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    header a{
+        font-size:16px;
+    }
+
+    .company-container{
+        width:90%;
+        padding:40px 0;
+        grid-template-columns:1fr;
+    }
+}

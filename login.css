@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #1e293b;
+
+    background:
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(134, 239, 219, 0.35),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 88% 22%,
+            rgba(129, 140, 248, 0.28),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 75% 85%,
+            rgba(165, 180, 252, 0.24),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            #A8D5CF,
+            #A7CBD8,
+            #B5C8E2,
+            #B8B9D8,
+            #A9B5D0
+        );
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 900px;
+    max-width: 95%;
+
+    display: flex;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    box-shadow:
+        0 20px 60px rgba(30, 41, 59, 0.15),
+        0 0 35px rgba(21, 94, 117, 0.12);
+}
+
+.left {
+    width: 45%;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(168, 213, 207, 0.90),
+            rgba(167, 203, 216, 0.92),
+            rgba(181, 200, 226, 0.90)
+        );
+
+    color: #123B4A;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.left h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+
+    color: #123B4A;
+
+    text-align: center;
+
+    text-shadow:
+        0 0 15px rgba(21, 94, 117, 0.15);
+}
+
+.left p {
+    font-size: 22px;
+    margin-bottom: 10px;
+
+    color: #164E63;
+
+    text-align: center;
+}
+
+.left span {
+    text-align: center;
+
+    color: #334155;
+
+    line-height: 1.6;
+}
+
+.right {
+    width: 55%;
+
+    padding: 45px;
+
+    background: rgba(255, 255, 255, 0.38);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.right h2 {
+    color: #123B4A;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 10px rgba(21, 94, 117, 0.15);
+}
+
+input {
+    width: 100%;
+
+    padding: 14px;
+
+    margin: 12px 0;
+
+    border: 1px solid rgba(21, 94, 117, 0.18);
+
+    outline: none;
+
+    border-radius: 8px;
+
+    background: rgba(255, 255, 255, 0.60);
+
+    color: #1e293b;
+
+    font-size: 15px;
+
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #155E75;
+
+    box-shadow:
+        0 0 10px rgba(21, 94, 117, 0.18);
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #123B4A,
+            #155E75,
+            #164E63
+        );
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 20px rgba(21, 94, 117, 0.15);
+
+    transition: 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    background:
+        linear-gradient(
+            135deg,
+            #155E75,
+            #0E7490,
+            #164E63
+        );
+
+    box-shadow:
+        0 0 20px rgba(14, 116, 144, 0.30);
+}
+
+#message {
+    text-align: center;
+
+    margin-top: 15px;
+
+    font-weight: bold;
+
+    color: #123B4A;
+}
+
+.register {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #475569;
+}
+
+.register a {
+    color: #155E75;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.register a:hover {
+    color: #0E7490;
+
+    text-shadow:
+        0 0 10px rgba(14, 116, 144, 0.25);
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 95%;
+
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .left {
+        padding: 30px;
+
+        border-right: none;
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .left h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+
+        border-radius: 15px;
+    }
+
+    .left {
+        padding: 25px 20px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+
+    .right {
+        padding: 30px 20px;
+    }
+
+    .right h2 {
+        font-size: 24px;
+    }
+
+    input {
+        padding: 12px;
+    }
+
+    button {
+        padding: 13px;
+    }
+}
